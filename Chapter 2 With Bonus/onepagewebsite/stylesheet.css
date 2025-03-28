@@ -1,0 +1,188 @@
+/* Note: All elements are designed in this css file, an external stylesheet. */
+
+/* Embeds a font locally  */
+@font-face {
+    font-family: "Benguiat Condensed";
+    src: url(fonts/ITCBenguiatStdMediumCn.OTF);
+}
+
+/* Format for all of the html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Benguiat Condensed';
+}
+
+/* Changes background Color and Font color */
+body {
+    background: linear-gradient(90deg, #0b0303, #160000f5);
+    color: rgb(248, 215, 215);
+}
+
+/* Nav bar design and functionality. */
+/* It's also a sticky nav bar because of the position, top, and z index */
+nav {
+    background-color: #6a0404;
+    padding: 15px ;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+/* Styles all of the anchor tag inside of the nav bar */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+/* When hovered, it changes color */
+nav a:hover {
+    color: #c80404;
+}
+
+/* Hero section is centered vertically and horizontally, and it covers the whole front page */
+.hero {
+    height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Button style for the watch now button. */
+
+button{
+    background: linear-gradient(90deg, #6D0000, #3A0000);
+    color: white;
+    border: 2px solid #9b0000;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 32px;
+    width: 40%;
+
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This also includes a transition, where it glows when its hovered */
+button:hover {
+    background: #9b0000;
+    border-color: #ff0000;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.6);
+}
+
+/* Styles the h1 tag inside of the title */
+.title h1 {
+    color: rgb(164, 0, 0);
+    font-size: 184px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+/* Styles the p tag inside of the title */
+.title p {
+    color: rgb(164, 0, 0);
+    font-size: 64px;
+}
+
+/* The glow animation for the text and everything else that has the class "glow" */
+.glow {
+    text-align: center;
+
+
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1.5s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #7a0000, 0 0 10px #480202, 0 0 15px #510404, 
+                   0 0 20px #3b0000, 0 0 25px #250000, 0 0 30px #110000;
+    }
+    to {
+      text-shadow: 0 0 8px #5b0202, 0 0 13px #770e0e, 0 0 18px #730f0f, 
+                   0 0 25px #250000, 0 0 30px #110000, 0 0 35px #080000;
+    }
+  }
+
+
+/* Structures the contents */
+.content {
+    padding: 50px;
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+/* All classes that has "header" will increase font size and will put space below. */
+.headers{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+/* Structures the overview section */
+.overview {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding: 60px;
+    text-align: justify;
+    margin:20px;
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+
+.description {
+    font-size: 24px;
+    width: 80%;
+}
+/* Structures the character section */
+.characters{
+    font-size: 24px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding: 60px;
+    margin: 20px;
+    margin-bottom: 500px;
+    text-align: justify;
+    
+}
+/* Structures the reviews section */
+.reviews{
+    margin: 10px;
+    padding: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: justify;
+}
+
+/* Styles the h3 tag inside of the reviews section */
+.reviews h3{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+/* Styles the p tag inside of the reviews section */
+.reviews p{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+/* Styles the container and structures them */
+.rev-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: justify;
+    gap: 40px;
+}
+
