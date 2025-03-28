@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML & CSS Reference Guide</title>
+  </head>
+  <body>
+    <div class="headers">
+      <h1>HTML & CSS QUICK-REFERENCE GUIDE</h1>
+      <hr />
+      <h1>HTML Guide:</h1>
+    </div>
+
+    <div class="info">
+      <p>
+        <abbr title="HyperText Markup Language">HTML</abbr> (HyperText Markup
+        Language) is the standard markup language for documents designed to be
+        displayed in a web browser.
+      </p>
+
+      <h2>HTML Tags:</h2>
+
+      <div class="box">
+        <h3>Text Tags</h3>
+        <ul>
+          <li>
+            <code>&lt;h1&gt;-&lt;h6&gt;</code> - Header tags
+            <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code></pre>
+          </li>
+          <li>
+            <code>&lt;p&gt;</code> - Paragraph tag
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+          </li>
+          <li>
+            <code>&lt;br&gt;</code> - Line break
+            <pre><code>This is a line.&lt;br&gt;This is another line.</code></pre>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Anchor & Media Tags</h3>
+        <ul>
+          <li>
+            <code>&lt;a href&gt;</code> - Link tag
+            <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+          </li>
+          <li>
+            <code>&lt;img src&gt;</code> - Image tag
+            <pre><code>&lt;img src="image.jpg" alt="Example" width="200" height="150"&gt;</code></pre>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>List Tags</h3>
+        <ul>
+          <li>
+            <code>&lt;ol&gt;</code> - Ordered list
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </li>
+          <li>
+            <code>&lt;ul&gt;</code> - Unordered list
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item A&lt;/li&gt;
+  &lt;li&gt;Item B&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </li>
+          <li>
+            <code>&lt;dl&gt;</code> - Description list
+            <pre><code>&lt;dl&gt;
+  &lt;dt&gt;Term 1&lt;/dt&gt;
+  &lt;dd&gt;Definition 1&lt;/dd&gt;
+  &lt;dt&gt;Term 2&lt;/dt&gt;
+  &lt;dd&gt;Definition 2&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Table Tags</h3>
+        <ul>
+          <li>
+            <code>&lt;table&gt;</code> - Table structure
+            <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Comment Tag</h3>
+      <code>&lt;!-- Comment --&gt;</code> - Used to add comments in HTML code.
+      <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+    </div>
+    <div class="headers">
+      <h1>CSS Guide</h1>
+    </div>
+
+    <div class="css-info">
+      <div class="info">
+        <p>
+          <abbr title="Cascading StyleSheets">CSS</abbr> (Cascading StyleSheets)
+          is used to style and design webpages, controlling elements like color,
+          font, size, spacing, and positioning.
+        </p>
+        <h2>CSS Properties:</h2>
+
+        <div class="box">
+          <ul>
+            <li>
+              <code>color</code> - Sets text color
+              <pre><code>p { color: blue; }</code></pre>
+            </li>
+            <li>
+              <code>background-color</code> - Sets background color
+              <pre><code>body { background-color: lightgray; }</code></pre>
+            </li>
+            <li>
+              <code>font-size</code> - Sets text size
+              <pre><code>h1 { font-size: 24px; }</code></pre>
+            </li>
+            <li>
+              <code>margin</code> - Sets outer spacing
+              <pre><code>div { margin: 10px; }</code></pre>
+            </li>
+            <li>
+              <code>padding</code> - Sets inner spacing
+              <pre><code>div { padding: 15px; }</code></pre>
+            </li>
+            <li>
+              <code>border</code> - Defines a border
+              <pre><code>table { border: 1px solid black; }</code></pre>
+            </li>
+            <li>
+              <code>display</code> - Defines layout
+              <pre><code>div { display: flex; }</code></pre>
+            </li>
+            <li>
+              <code>text-align</code> - Aligns text
+              <pre><code>h1 { text-align: center; }</code></pre>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Code Breakdown -->
+<!-- Every Section is seperated by a div that share the same properties in the css -->
+<!-- The <abbr> tag refers to abbreviation, when hovered it shows the full name. -->
+<!-- Most tags are inside of the <code> tag which defines an actual code. Used to seperate an actual code with a normal text. -->
+<!-- The pre tag is used to display the code written exactly as it is. -->
+<!-- The &lt; is a way to write the less than sign, because if < is written, the IDE thinks that it's writing a code.
+      On the other hand, the &gt; is for the greater than sign. -->

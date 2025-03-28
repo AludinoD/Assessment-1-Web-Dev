@@ -1,0 +1,55 @@
+/* Comment Line for CSS */
+*{ 
+  margin: 0%;
+  padding: 0%;
+  background-color: #eadfb1;
+  font-family: 'JetBrains Mono', sans-serif;
+  color: black;
+}
+
+/* Changed the cat image height, width, and radius. The cat will be fit inside of the given dimensions.  */
+.cat {
+  height: 500px;
+  width: 70%;
+  object-fit: fill;
+  border-radius: 50px;
+}
+
+
+/* A container for the images. Given a display of flex so all images are beside each other and is in the middle. Gap to give it spaces. */
+.imgcontainer{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  
+
+}
+/* The images have certain widths and heights and will cover those dimensions. The radius to make the images look softer and has a box shadow to make it look good. */
+.img{
+  width: 260px;   
+  height: 250px;  
+  object-fit: cover;  
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(13, 13, 13, 0.436);
+}
+/* Ingredients, Methods and Recipe sections have a padding and margin for spacings and has a given width. The radius to make the box look soft and has a box shadow to make it look good. */
+.ingredients , .method ,.recipe{
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(13, 13, 13, 0.436);
+}
+
+/* Formats the unordered and ordered list to the left with a padding. */
+ul, ol {
+  text-align: left;
+  padding-left: 30px;
+}
+
+/* This section is for the youtube link. Gave a border radius to make it look soft and a shadow to make it look better. */
+iframe {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(13, 13, 13, 0.436);
+}
+

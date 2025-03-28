@@ -1,0 +1,59 @@
+/* Edits the general structure for the body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+  
+/* Headers have bigger sizes and spacing on the bottom */
+.headers h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+/* The line below the title   */
+hr {
+    width: 70%;
+    border: 1px solid #494242;
+    margin-bottom: 20px;
+}
+
+/* Spacings after the h2 and h3 tag */
+h2, h3 {
+    margin-bottom: 10px;
+}
+  
+/* Removes the list style which is the dot */
+ul {
+    list-style: none;
+    padding: 0;
+}
+ /*Codes start on the left and has spacing  */
+li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+  
+/* For all the codes that has the pre tag, which is commonly used in the examples. */
+pre {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+/* Changes the font for all tags that has the code */
+code {
+    font-family: "Courier New", monospace;
+}
+
+/* The container all the information are in */
+.box{
+    background-color: #e5e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #000000;
+}
+  

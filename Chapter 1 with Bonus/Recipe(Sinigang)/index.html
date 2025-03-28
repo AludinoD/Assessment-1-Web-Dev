@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css" /> <!--Links the CSS -->
+    <title>Recipe Book</title>
+  </head>
+  <body>
+    <center>
+      <!--Header Image-->
+      <img src="images/Chef.png" alt="Chef Cat" class="cat" />
+    </center>
+
+    <center>
+      <!--Header Text-->
+      <h1>Cooking With Clover!</h1>
+      <!-- Audio is on autoplay and the controls are hidden -->
+      <audio autoplay loop hidden>
+        <source src="01. Stardew Valley Overture.mp3" type="audio/mp3" />
+      </audio>
+
+      <!--Sections are separated by a div-->
+      <div class="video">
+        <!-- Video Source is from a youtube link -->
+        <iframe
+          width="1000px"
+          height="500px"
+          src="https://www.youtube.com/embed/HqD1DAse1LQ?si=Nu3W9q1-9oY3jHph"
+          title="Sinigang Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </center>
+    <!--Sections are separated by a div-->
+    <div class="recipe">
+      <h1>Recipe #1: Sinigang</h1>
+      <p>
+        <!--Paragraph for a description of what Sinigang is-->
+        Sinigang is a sour soup native to the Philippines. This recipe uses pork
+        as the main ingredient, but other proteins like beef, shrimp, and fish
+        can also be used.
+      </p>
+    </div>
+    <!--Sections are seperated by a div-->
+    <div class="imgcontainer">
+      <!--Images are given a class to be fixed easier in CSS-->
+      <img src="images/sinigang-2.jpg" alt="sinigang" class="img" />
+      <img src="images/sinigang-na-baboy.jpg" alt="sinigang na baboy" class="img" />
+      <img src="images/Sinigang-na-Baboy-Recipe.jpg"alt="sinigang picture"class="img"/>
+      <img src="images/What-is-sinigang.jpg" alt="sinigang picture" class="img" />
+    </div>
+    <!--Sections are seperated by a div-->
+    <div class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <!--An Unordered List for the steps-->
+        <li><strong>Main Ingredients & Alternatives:</strong></li>
+        <!--Strong to emphasize the text-->
+        <ul>
+          <li>Pork Belly</li>
+          <li>Chicken</li>
+          <li>Beef</li>
+          <li>Shrimp</li>
+          <li>Fish</li>
+        </ul>
+        <li>Young Tamarind</li>
+        <li>Water Spinach</li>
+        <li>String Beans</li>
+        <li>Eggplant</li>
+        <li>Daikon Radish</li>
+        <li>Long Green Pepper</li>
+      </ul>
+    </div>
+
+    <!--Sections are seperated by a div-->
+    <div class="method">
+      <h2>How to Cook Sinigang</h2>
+      <ol>
+        <!--An Ordered List for the steps-->
+        <li>Extract flavors from the tamarind.</li>
+        <li>Boil the tamarind and cook the meat.</li>
+        <li>Add the vegetables sequentially.</li>
+        <li>Season it and then add the remaining ingredients.</li>
+        <li>Serve it hot.</li>
+        <li>Enjoy!</li>
+      </ol>
+    </div>
+  </body>
+</html>
