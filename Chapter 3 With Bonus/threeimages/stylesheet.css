@@ -1,0 +1,138 @@
+/* Format for all*/
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Navigation bar Styling, its also a sticky nav bar so it can be easier to navigate through the filters and bonus */
+nav {
+    background-color: #0d0d0d;
+    padding: 15px ;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation bar links styling */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 16px;
+}
+/* The hero section or the header  */
+.hero{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 44px;
+}
+/* The general format and structure for all divs that has the container class. */
+.container {
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    margin-top: 100px;
+}
+/* The header for the container */
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+/* Formats the images, giving them proper dimensions and a smooth transition. */
+.imgformat{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+
+}
+/* When the pictures are hovered, all those with filter are going to return to its original image until the user stops hovering. */
+.imgformat:hover{
+    filter: none;
+}
+
+/* A way to keep the images in a row */
+.imagerow{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* The p tag under the images, also the credits  */
+.imagerow p{
+    margin-top: 10px;
+}
+
+/* Special Format because the image is smaller compared to others */
+#special{
+    width: 400px; 
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+/* Works the same way as the imgformat:hover */
+#special:hover{
+    filter: none;
+}
+
+
+/* Filters */
+.blur{
+    filter: blur(2px);
+}
+
+.grayscale{
+    filter:grayscale(100%);
+}
+
+
+.saturate{
+    filter: saturate(1000%);
+}
+
+/* This is the container for the bonus part */
+.divcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 50px;
+}
+/* The format for the divbox class */
+.divbox {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 25px;
+    line-height: 100px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+
+}
+/* Style 1 with border and box shadow */
+#style1 {
+    border: 4px solid #8A2AE3;
+    box-shadow: 8px 6px 10px #FF2020;
+}
+/*Style 2 with box shadow and border */
+#style2 {
+    border: 4px solid #00FF00;
+    box-shadow: inset 10px 10px 10px;
+}
+/* Style 3 with multiple box shadows with offsets */
+#style3 {
+    border: 4px solid #FF8B00;
+    box-shadow: 0 0 0 10px #0000FE, 0 0 0 20px #FE0000, 0 0 0 30px #008001;
+    border-radius: 20px;
+}
+/* Style 4 with text shadow */
+#style4 {
+    border: 4px solid #B22222;
+    text-shadow: 10px 10px 3px #000000;
+}
