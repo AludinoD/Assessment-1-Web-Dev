@@ -1,0 +1,78 @@
+/* General structure of the website */
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+/* Body formatting to ensure everything is in the center */
+body {
+    background-color: #f89b29;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Header Tag that ensures that theres enough space and bigger font size */
+h1{
+    margin-top: 40px ;
+    margin-bottom: 100px;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Container design and centering it vertically and horizontally along with the items inside of it */
+.container{
+    font-size: 24px;
+    width: 70%;
+    padding: 20px;
+    background: #cc2936;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.826);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+/* Input design */
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+
+}
+/* When typing an input there will be a border color signifying you are adding an input */
+input:focus {
+    border-color: #01aaff;
+    border-width: 3px;
+    outline: none;
+}
+/* Button Design  */
+button {
+    background-color: #3496fe;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+/* When hovering over the button, it changes background color showing that it's working */
+button:hover {
+    background-color: #7abaff;
+}
+/* Result area */
+#result{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
