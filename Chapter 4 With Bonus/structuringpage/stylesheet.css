@@ -1,0 +1,100 @@
+/* General Structure of the website */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Header format along with the nav bar */
+header{
+    background-color: #17072b;
+    color: #FFFFFF;
+    font-family: 'Tahoma';
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* Main nav bar format */
+nav{
+    padding-top: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Nav bar links format */
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+}
+/* The main format for the section and aside */
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Section format */
+section{
+    width: 65%;
+    margin-right: 70px;
+}
+
+/* Aside format */
+aside{
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 20px;
+    width: 40%;
+}
+
+/* Works as an image container  */
+.images{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+/* Format for the big image */
+.imgbig{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* Format for the small image */
+.imgsmall{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* For the unordered list to have no button */
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Keeps the footer on the bottom */
+footer{
+    background-color: #8c15e9;
+    color: #FFFFFF;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
