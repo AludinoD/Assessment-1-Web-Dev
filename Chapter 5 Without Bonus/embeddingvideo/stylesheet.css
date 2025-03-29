@@ -1,0 +1,33 @@
+/* General Structure for the website */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(40, 54, 91);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* Header has an absolute position so its stays in the middle horizontally and vertically */
+h1{
+    font-size: 80px;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content;
+}
+
+/* Container for the video, centering it horizontally and vertically */
+.videocontainer{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Design for the actual video  */
+video{
+    border-radius: 20px;
+    border: 5px solid;
+    border-color: rgb(24, 120, 224);
+}
